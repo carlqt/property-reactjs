@@ -7,9 +7,18 @@ import Navbar from '../Shared/navbar';
 class Property extends Component {
   render() {
     return (
-      <div className = "App" >
+      <div className = "property-section" >
         <Navbar />
-        Sup
+
+        <div className="gallery-container">
+          <div className="item-a">
+          </div>
+
+          <div className="item-b">
+            <div className="subitem-a" />
+            <div className="subitem-b" />
+          </div>
+        </div>
       </div>
     );
   }

@@ -5,7 +5,7 @@ const Item = () => {
   return(
       <div className="card">
         <Link to="/property/sophia" className="image">
-          <img src="images/mactan.png"/>
+          <img src="images/img.png"/>
         </Link>
         <div className="content">
           <span className="right floated">
