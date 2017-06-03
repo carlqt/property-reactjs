@@ -2,7 +2,7 @@ import 'semantic-ui/dist/semantic.css';
 import './App.css';
 import React, { Component } from 'react';
 
-import Navbar from './components/navbar';
+import Navbar from '../Shared/navbar';
 import Item from './components/item';
 
 class App extends Component {

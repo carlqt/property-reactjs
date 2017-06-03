@@ -1,15 +1,16 @@
 import React from 'react';
-import logo from '../../logo.svg';
+import { Link } from 'react-router-dom';
+import logo from '../logo.svg';
 
 const Navbar = () => {
   return(
     <div className="red ui inverted menu">
-      <a className="item">
+      <Link to="/" className="item">
         <img src={logo} />
         PropertyKing
-      </a>
+      </Link>
     </div>
   )
 }
 
-export default Navbar
+export default Navbar;
