@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     let cards = [];
     for (var i = 0; i < 5; i++) {
-      cards.push(<Item />)
+      cards.push(<Item key={i} />)
     };
 
     return (
