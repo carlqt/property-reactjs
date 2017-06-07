@@ -3,24 +3,14 @@ import './App.css';
 import React, { Component } from 'react';
 
 import Navbar from '../Shared/navbar';
-import Item from './components/item';
+import Routes from '../Routes';
 
 class App extends Component {
   render() {
-    let cards = [];
-    for (var i = 0; i < 5; i++) {
-      cards.push(<Item key={i} />)
-    };
-
     return (
       <div className = "App" >
-
         <Navbar / >
-
-        <div className="item-container ui cards" >
-            {cards}
-        </div>
-
+        <Routes />
       </div>
     );
   }

@@ -8,7 +8,6 @@ class Property extends Component {
   render() {
     return (
       <div className = "property-section" >
-        <Navbar />
 
         <div className="gallery-container">
           <div className="item-a">
