@@ -6,7 +6,6 @@ class Index extends Component {
   render() {
     return(
       <div>
-        <Navbar />
 
         <div className="ui container">
           <AddressForm />
