@@ -5,6 +5,7 @@ import { CHECK_AUTHENTICATION } from '../Constants';
 export const INITIAL_STATE = Immutable.fromJS({
   username: "",
   email: "",
+  token: "",
   authenticated: false,
 });
 

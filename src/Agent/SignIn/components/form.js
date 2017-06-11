@@ -1,23 +1,18 @@
 import React from 'react';
 import axios from 'axios';
 import './SignIn.css';
+import { bindActionCreators } from 'redux';
+import { connect } from  'react-redux';
+
 
 import { getJwt } from 'Helpers/Helpers';
+import { userLogIn }  from '../../../Actions/user_session_action';
 
 
 class Form extends React.Component {
   submitForm(event) {
-    event.preventDefault()
-    const url = "http://localhost:8000/api/admin/sign_in"
-
-    axios.post(url, {
-      password: this.password.value,
-      email: this.email.value
-    }).then((resp) => {
-      localStorage.setItem("jwt", resp.data.token)
-    }).catch((resp) => {
-      console.log(resp)
-    })
+    event.preventDefault();
+    this.props.userLogIn(this.email.value, this.password.value);
   }
 
   render() {
@@ -52,4 +47,10 @@ class Form extends React.Component {
   }
 }
 
-export default Form;
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({
+    userLogIn
+  }, dispatch);
+}
+
+export default connect(null, mapDispatchToProps)(Form);
