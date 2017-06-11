@@ -4,7 +4,6 @@ import { connect } from  'react-redux';
 
 class SignIn extends Component {
   render() {
-    console.log(this.props.user.toJS());
     return(
       <div>
         <Form />
@@ -12,7 +11,6 @@ class SignIn extends Component {
     )
   }
 }
-
 
 function mapStateToProps(state) {
   return{

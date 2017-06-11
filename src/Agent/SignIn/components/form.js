@@ -1,11 +1,9 @@
 import React from 'react';
-import axios from 'axios';
 import './SignIn.css';
 import { bindActionCreators } from 'redux';
 import { connect } from  'react-redux';
 
 
-import { getJwt } from 'Helpers/Helpers';
 import { userLogIn }  from '../../../Actions/user_session_action';
 
 
