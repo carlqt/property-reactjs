@@ -18,8 +18,6 @@ class Form extends React.Component {
     }).catch((resp) => {
       console.log(resp)
     })
-
-    console.log(getJwt());
   }
 
   render() {
