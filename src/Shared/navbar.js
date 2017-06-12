@@ -5,9 +5,9 @@ import logo from '../logo.svg';
 const Navbar = (props) => {
   const SessionButton = ({authenticated}) => {
     if (authenticated) {
-      return <a className="ui item active">Sign Out</a>;
+      return <a onClick={props.onSignOut.bind(this)} className="ui item active">Sign Out</a>;
     } else {
-      return <Link to="/admin/sign_in" className="ui item active">Sign In</Link>;
+      return <Link to="/agent/sign_in" className="ui item active">Sign In</Link>;
     }
   }
 

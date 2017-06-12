@@ -1,5 +1,6 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
+import { connect } from  'react-redux';
 
 class AuthRoute extends React.Component {
   constructor(props) {
@@ -15,7 +16,8 @@ class AuthRoute extends React.Component {
     //  > if token is not in the redux state, validate token in the server
     //    > If validation failed, return false else return true and store in redux state
     // If token exists in redux state as well, return true
-    return false;
+    const { user } = this.props;
+    return user.get("authenticated");
   }
 
   render() {
@@ -27,4 +29,12 @@ class AuthRoute extends React.Component {
   }
 }
 
-export default AuthRoute;
+
+function mapStateToProps(state) {
+  return{
+    user: state.user,
+  }
+}
+
+export default connect(mapStateToProps, null)(AuthRoute);
+// export default AuthRoute;

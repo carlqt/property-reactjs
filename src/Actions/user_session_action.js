@@ -1,6 +1,5 @@
 import axios from 'axios';
-import { BASE_URL, CHECK_AUTHENTICATION } from '../Constants';
-
+import { BASE_URL, CHECK_AUTHENTICATION, USER_LOGOUT } from '../Constants';
 
 export function userLogIn(email, password) {
   const loginURL = `${BASE_URL}/admin/sign_in`
@@ -15,5 +14,12 @@ export function userLogIn(email, password) {
     }).catch((resp) => {
       console.log(resp)
     })
+  }
+}
+
+export function userLogOut() {
+  return dispatch => {
+    localStorage.removeItem("jwt")
+    dispatch({type: USER_LOGOUT, payload: {}})
   }
 }

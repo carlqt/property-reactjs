@@ -3,9 +3,7 @@ import './SignIn.css';
 import { bindActionCreators } from 'redux';
 import { connect } from  'react-redux';
 
-
 import { userLogIn }  from '../../../Actions/user_session_action';
-
 
 class Form extends React.Component {
   submitForm(event) {
