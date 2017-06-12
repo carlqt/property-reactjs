@@ -13,10 +13,10 @@ import { AgentRoot } from './Agent/Root/Root';
 export default () => (
   <Switch>
     <Route exact path="/" component={Cards} />
+    <Route exact path="/cards" component={Cards} />
     <Route exact path="/property/:name" component={Property} />
     <Route exact path="/property_upload" component={Upload} />
     <Route exact path="/agent/sign_in" component={AgentSignIn} />
-    {/*<Route exact path="/agent/protected" component={Protected} />*/}
     <AuthRoute back={"/agent/sign_in"}>
       <Route exact path="/agent" component={AgentRoot} />
       <Route exact path="/agent/protected" component={Protected} />

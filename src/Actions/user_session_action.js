@@ -19,7 +19,7 @@ export function userLogIn(email, password) {
 
 export function userLogOut() {
   return dispatch => {
-    localStorage.removeItem("jwt")
-    dispatch({type: USER_LOGOUT, payload: {}})
+    localStorage.removeItem("jwt");
+    dispatch({type: USER_LOGOUT, payload: {}});
   }
 }

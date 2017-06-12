@@ -10,12 +10,6 @@ class AuthRoute extends React.Component {
   }
 
   authenticated() {
-    // Check for the token here
-    // If token does not exists, return false
-    // If token exists, check if it is also in the redux state
-    //  > if token is not in the redux state, validate token in the server
-    //    > If validation failed, return false else return true and store in redux state
-    // If token exists in redux state as well, return true
     const { user } = this.props;
     return user.get("authenticated");
   }
@@ -37,4 +31,3 @@ function mapStateToProps(state) {
 }
 
 export default connect(mapStateToProps, null)(AuthRoute);
-// export default AuthRoute;
