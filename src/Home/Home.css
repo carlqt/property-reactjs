@@ -1,0 +1,16 @@
+.ui.menu {
+  margin: 0px; }
+
+.masthead {
+  background-image: url("https://static.pexels.com/photos/186077/pexels-photo-186077.jpeg") !important;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 700px; }
+  .masthead h1.ui.header {
+    margin-top: 3em;
+    font-size: 4em;
+    font-weight: normal; }
+
+.ui.vertical.stripe {
+  padding: 8em 0em; }
