@@ -1,5 +1,7 @@
-import './Home.css'
+import './Home.css';
 import React from 'react';
+
+import Footer from './components/footer';
 
 class Home extends React.Component {
   render() {
@@ -35,26 +37,36 @@ class Home extends React.Component {
           </div>
 
         </div>
-        <div className="ui vertical stripe segment">
-          <div className="ui middle aligned stackable grid container">
-            <div className="row">
-              <div className="eight wide column">
-                <h3 className="ui header">We Help Companies and Companions</h3>
-                <p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
-                <h3 class="ui header">We Make Bananas That Can Dance</h3>
-                <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
-              </div>
-              <div className="six wide right floated column">
-                <img src="assets/images/wireframe/white-image.png" className="ui large bordered rounded image"/>
-              </div>
+
+        <div className="segment-container">
+          <div className="popular-segments">
+            <div className="title-header centered row">
+              <h1>Popular Properties</h1>
             </div>
-            <div className="row">
-              <div className="center aligned column">
-                <a className="ui huge button">Check Them Out</a>
-              </div>
+
+            <div className="popular-items">
+              <img src="http://static2.businessinsider.com/image/5730b8c691058426008c1968/the-21-most-expensive-houses-for-sale-in-the-hamptons.jpg"/>
+              <img src="https://i.ytimg.com/vi/T4akqaGDqi4/maxresdefault.jpg" />
+              <img src="http://mikecerra.com/wp-content/uploads/2016/12/house-7.jpg" />
             </div>
           </div>
         </div>
+
+        <div className="segment-container">
+          <div className="popular-segments">
+            <div className="title-header centered row">
+              <h1>Popular Properties</h1>
+            </div>
+
+            <div className="popular-items">
+              <img src="http://static2.businessinsider.com/image/5730b8c691058426008c1968/the-21-most-expensive-houses-for-sale-in-the-hamptons.jpg"/>
+              <img src="https://i.ytimg.com/vi/T4akqaGDqi4/maxresdefault.jpg" />
+              <img src="http://mikecerra.com/wp-content/uploads/2016/12/house-7.jpg" />
+            </div>
+          </div>
+        </div>
+
+        <Footer />
       </div>
     )
   }

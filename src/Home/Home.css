@@ -12,5 +12,20 @@
     font-size: 4em;
     font-weight: normal; }
 
-.ui.vertical.stripe {
+.segment-container {
+  padding: 8em 0em; }
+
+.title-header.centered {
+  text-align: center;
+  margin: 10px; }
+
+.popular-items {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; }
+  .popular-items img {
+    height: 300px;
+    width: 400px; }
+
+.footer.segment {
   padding: 8em 0em; }
